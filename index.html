@@ -22,16 +22,26 @@ footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
 <nav><a href="#tr">Türkçe</a> · <a href="#en">English</a> · <a href="../../">Sugar Developments</a></nav>
 <section id="tr" lang="tr">
 <h1>Easy Location — Gizlilik Politikası</h1>
-<p>Yürürlük tarihi: 24 Ekim 2026</p>
+<p>Yürürlük tarihi: 28 Ekim 2026</p>
 <p>Bu politika, Android ve iOS için geliştirilen <strong>Easy Location</strong> uygulamasının (uygulama kimliği <code>com.burakseker.easylocation</code>) hangi verileri nasıl kullandığını anlatır. Uygulama, bulunduğun yeri ya da haritadan seçtiğin bir yeri kaydetmeni sağlar.</p>
 <h2>Cihazında kalan veriler</h2>
 <ul>
   <li>Uygulama hesap, giriş ya da kişisel bilgi istemez.</li>
-  <li>Kaydettiğin konumlar (koordinat ve adres), verdiğin isimler, notlar, fotoğraflar, listeler ve ayarlar <strong>yalnızca cihazında</strong>, uygulamanın kendi klasöründe saklanır. Bu bilgiler geliştiriciye ya da başka bir sunucuya gönderilmez; geliştirici bunlara erişemez.</li>
+  <li>Kaydettiğin konumlar (koordinat ve adres), verdiğin isimler, notlar, fotoğraflar, listeler ve ayarlar <strong>yalnızca cihazında</strong>, uygulamanın kendi klasöründe saklanır. Bir listeyi paylaşmadığın sürece bu bilgiler geliştiriciye ya da başka bir sunucuya gönderilmez; geliştirici bunlara erişemez (bkz. "Liste paylaşma").</li>
   <li>Konum yalnızca "Konumumu Kaydet" düğmesine bastığında alınır; arka planda konum izlenmez.</li>
   <li>Fotoğraflar kameradan çektiğinde ya da galeriden seçtiğinde uygulamanın klasörüne kopyalanır. Uygulama galerinin tamamına erişmez, yalnızca seçtiğin fotoğrafları alır.</li>
   <li>Konumları, listeleri ve fotoğrafları uygulamadan silebilirsin; uygulamayı kaldırdığında tüm veriler silinir.</li>
   <li>Cihazının yedeklemesi açıksa (Android'de Google yedeklemesi, iOS'ta iCloud yedeklemesi) bu veriler kendi hesabındaki cihaz yedeğine dahil olabilir.</li>
+</ul>
+<h2>Liste paylaşma</h2>
+<ul>
+  <li>Bir listeyi "Listeyi paylaş" ile paylaştığında, kısa bir bağlantı oluşturmak için listenin adı ve içindeki konumların koordinatları, isimleri, adresleri ve notları (fotoğraflar hariç) geliştiricinin Cloudflare üzerinde çalışan sunucusuna (easylocation.pages.dev) gönderilir ve orada saklanır. Bu veriler bir hesapla ya da cihazınla ilişkilendirilmez.</li>
+  <li>Bağlantıya sahip olan herkes listeyi görebilir ve kendi uygulamasına ekleyebilir. Bağlantıyı yalnızca görmesini istediğin kişilerle paylaş.</li>
+  <li>Paylaşılan bir bağlantıyı açtığında liste aynı sunucudan alınır.</li>
+  <li>Sunucuya ulaşılamazsa liste sunucuya gönderilmez; bunun yerine bağlantının içine yazılır.</li>
+  <li>Kötüye kullanımı önlemek için IP adresinin, her gün değişen bir değerle alınmış tek yönlü özeti en fazla 2 saat tutulur; IP adresinin kendisi saklanmaz.</li>
+  <li>Paylaştığın bir listenin sunucudan silinmesini istersen bağlantıyı aşağıdaki adrese e-postayla gönderebilirsin.</li>
+  <li>Sunucu hizmetini Cloudflare sağlar: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
 </ul>
 <h2>Uygulamanın kullandığı hizmetler</h2>
 <p>Bazı özellikler konum bilgisinin o anda bir harita hizmetine gönderilmesini gerektirir. Bu hizmetler veriyi kendi gizlilik politikalarına göre işler:</p>
@@ -66,16 +76,26 @@ footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
 <hr>
 <section id="en" lang="en">
 <h1>Easy Location — Privacy Policy</h1>
-<p>Effective date: October 24, 2026</p>
+<p>Effective date: October 28, 2026</p>
 <p>This policy explains what data the <strong>Easy Location</strong> app for Android and iOS (app ID <code>com.burakseker.easylocation</code>) uses and how. The app lets you save where you are or a place you pick on a map.</p>
 <h2>Data that stays on your device</h2>
 <ul>
   <li>The app does not ask for an account, sign-in or personal information.</li>
-  <li>The places you save (coordinates and address), names, notes, photos, lists and settings are stored <strong>only on your device</strong>, in the app's own storage. They are not sent to the developer or to any other server; the developer cannot access them.</li>
+  <li>The places you save (coordinates and address), names, notes, photos, lists and settings are stored <strong>only on your device</strong>, in the app's own storage. Unless you share a list, they are not sent to the developer or to any other server; the developer cannot access them (see "Sharing a list").</li>
   <li>Your location is read only when you tap "Save My Location"; it is never tracked in the background.</li>
   <li>Photos you take or pick are copied into the app's storage. The app does not access your whole gallery, only the photos you choose.</li>
   <li>You can delete places, lists and photos in the app; uninstalling the app deletes all of its data.</li>
   <li>If your device backup is on (Google backup on Android, iCloud backup on iOS), this data may be included in the device backup in your own account.</li>
+</ul>
+<h2>Sharing a list</h2>
+<ul>
+  <li>When you share a list with "Share List", the list name and the coordinates, names, addresses and notes of its places (not photos) are sent to the developer's server running on Cloudflare (easylocation.pages.dev) and stored there to create a short link. This data is not linked to an account or to your device.</li>
+  <li>Anyone with the link can see the list and add it to their own app. Only share the link with people you want to see it.</li>
+  <li>When you open a shared link, the list is fetched from the same server.</li>
+  <li>If the server can't be reached, the list is not sent to it; it is written into the link itself instead.</li>
+  <li>To prevent abuse, a one-way hash of your IP address, made with a value that changes every day, is kept for at most 2 hours; the IP address itself is not stored.</li>
+  <li>If you want a list you shared removed from the server, email us the link at the address below.</li>
+  <li>The server is provided by Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
 </ul>
 <h2>Services the app relies on</h2>
 <p>Some features need to send location information to a map service at that moment. These services process the data under their own privacy policies:</p>
